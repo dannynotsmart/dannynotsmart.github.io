@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .nav-link {
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #7289DA;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-card {
+            border: 2px solid #7289DA;
+            background-color: #f5f6f8;
+            transition: transform 0.3s;
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .social-logo {
+            width: 80px;
+            margin: 15px auto;
+        }
+
+        .blog-content {
+            font-style: italic;
+            color: #888;
+        }
+
+        body.light-mode {
+            background-color: #FFFFFF;
+            color: #333333;
+        }
+
+        body.dark-mode {
+            background-color: #333333;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+    <div class="container">
+        <header class="text-center py-5">
+            <h1>Welcome to my website!</h1>
+            <button id="theme-toggle" class="btn btn-primary">Toggle Dark Mode</button>
+            <p>Click through the tabs to use this website.</p>
+        </header>
+        <nav class="nav nav-tabs">
+            <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#about">About Me</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#skills">Skills</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#projects">Projects</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#contact">Contact Me</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#blog">Blog</a>
+        </nav>
+        <div class="tab-content py-4">
+            <div class="tab-pane fade show active" id="home">
+                <h2>Home</h2>
+                <p>Hi, I’m Danny! This is a personal website that somewhat acts like a portfolio or a get-to-know-me
+                    type of thing.</p>
+                <p>Here are the informations about each tab here:</p>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action"><strong>Home:</strong> You are here.</a>
+                    <a href="#about" class="list-group-item list-group-item-action"><strong>About Me:</strong> Just some
+                        stuff about me.</a>
+                    <a href="#skills" class="list-group-item list-group-item-action"><strong>Skills:</strong> A
+                        technical list of all my computational knowledge.</a>
+                    <a href="#contact" class="list-group-item list-group-item-action"><strong>Contact Me:</strong> List
+                        of all my contacts.</a>
+                    <a href="#blog" class="list-group-item list-group-item-action"><strong>Blog:</strong> Blog
+                        content... I’ll post random things on there...</a>
+                </div>
+                <br>
+                <p>Click through the tabs to use this website.</p>
+                <img src="assets/ebirl.png" alt="ebirl">
+            </div>
+            <div class="tab-pane fade" id="about">
+                <h2>About Me</h2>
+                <p>Hi, I’m Danny, an avid programmer from New York. I have experience in many fields of computer
+                    science, including software engineering, robotics, and machine learning.</p>
+                <p>I like to watch TV shows and movies as well.</p>
+                <p>If interested in a resume or CV, one will be given upon request.</p>
+                <img src="assets/tenders.png" alt="tenders">
+            </div>
+            <div class="tab-pane fade" id="skills">
+                <h2>Skills</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/python.png" class="card-img-top" alt="Python">
+                            <div class="card-body">
+                                <h5 class="card-title">Python (4+ years)</h5>
+                                <p class="card-text">Advanced</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/csharp.png" class="card-img-top" alt="C#">
+                            <div class="card-body">
+                                <h5 class="card-title">C# (3+ years)</h5>
+                                <p class="card-text">Advanced</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/java.png" class="card-img-top" alt="Java">
+                            <div class="card-body">
+                                <h5 class="card-title">Java (2+ years)</h5>
+                                <p class="card-text">Intermediate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/javascript.png" class="card-img-top" alt="JavaScript/TypeScript">
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript/TypeScript (2+ years)</h5>
+                                <p class="card-text">Intermediate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/sql.png" class="card-img-top" alt="SQL">
+                            <div class="card-body">
+                                <h5 class="card-title">SQL (2+ years)</h5>
+                                <p class="card-text">Intermediate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/cpp.png" class="card-img-top" alt="C++">
+                            <div class="card-body">
+                                <h5 class="card-title">C++ (1+ years)</h5>
+                                <p class="card-text">Beginner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/c.png" class="card-img-top" alt="C">
+                            <div class="card-body">
+                                <h5 class="card-title">C (1+ years)</h5>
+                                <p class="card-text">Beginner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/htmlcss.png" class="card-img-top" alt="HTML/CSS">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML/CSS (2+ years)</h5>
+                                <p class="card-text">Beginner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/net.jpeg" class="card-img-top" alt="Software Engineering">
+                            <div class="card-body">
+                                <h5 class="card-title">Software Engineering</h5>
+                                <p class="card-text">Mainly developed with C# and the .NET framework. Have experiences
+                                    in Python GUI development (PyQt, Tkinter)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/first.png" class="card-img-top" alt="Robotics">
+                            <div class="card-body">
+                                <h5 class="card-title">Robotics</h5>
+                                <p class="card-text">Developed with Java and WPILIB. Robot built for yearly
+                                    international robotics competition @ FIRST Robotics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/pytorch.png" class="card-img-top"
+                                alt="Machine Learning/Computer Vision">
+                            <div class="card-body">
+                                <h5 class="card-title">Machine Learning/Computer Vision</h5>
+                                <p class="card-text">Uses Python and PyTorch as primary toolset. Have experiences with
+                                    OpenCV for image processing. Currently building a model for ultrasound imaging.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/dpy.png" class="card-img-top" alt="Chat Bots">
+                            <div class="card-body">
+                                <h5 class="card-title">Chat Bots</h5>
+                                <p class="card-text">Mainly developed with Python and discord.py to build advanced
+                                    discord bots. Built bots for servers with 20k+ members.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/lebum.png" class="card-img-top" alt="Website Development">
+                            <div class="card-body">
+                                <h5 class="card-title">Website Development</h5>
+                                <p class="card-text">This is a SCAM! I HATE building websites! Yes, that includes this
+                                    one! Have experience with Python and Flask for backend development to build API
+                                    endpoints. Have questionable experiences with frontend.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/godot.png" class="card-img-top" alt="Game Development">
+                            <div class="card-body">
+                                <h5 class="card-title">Game Development</h5>
+                                <p class="card-text">Novice experiences with Godot and Unity to build 2D/3D games.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/skills/blender.png" class="card-img-top" alt="3D Modeling">
+                            <div class="card-body">
+                                <h5 class="card-title">3D Modeling</h5>
+                                <p class="card-text">Novice experiences with Blender and Tinkercad (wow)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="projects">
+                <h2>Projects</h2>
+                <p>Notable projects will be showcased here.</p>
+            </div>
+            <div class="tab-pane fade" id="contact">
+                <h2>Contact Me</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card text-center" style="border-color: #7289DA; background-color: #f5f6f8;">
+                            <img src="assets/social/discord.png" class="card-img-top mx-auto mt-3" alt="Discord">
+                            <div class="card-body">
+                                <h5 class="card-title">Discord</h5>
+                                <p class="card-text">@applicationprogramminginterface</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center" style="border-color: #E1306C; background-color: #f5f6f8;">
+                            <img src="assets/social/instagram.png" class="card-img-top mx-auto mt-3" alt="Instagram">
+                            <div class="card-body">
+                                <h5 class="card-title">Instagram</h5>
+                                <p class="card-text">@banana_milkshake_dude</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center" style="border-color: #24292E; background-color: #f5f6f8;">
+                            <img src="assets/social/github.png" class="card-img-top mx-auto mt-3" alt="GitHub">
+                            <div class="card-body">
+                                <h5 class="card-title">GitHub</h5>
+                                <p class="card-text"><a
+                                        href="https://github.com/dannynotsmart">https://github.com/dannynotsmart</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="blog">
+                <h2>Blog</h2>
+                <p>Coming soon, only on HBO Max +.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
